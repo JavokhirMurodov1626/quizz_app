@@ -1,26 +1,17 @@
 import "./App.css";
-import { DraggableAnswer,DroppableArea } from "components";
-// drag and drop quiz app
-const answers = [
-  { id: 1, text: "answer 1" },
-  { id: 2, text: "answer 2" },
-  { id: 3, text: "answer 3" },
-  { id: 4, text: "answer 4" },
-];
+import { DragAndDropQuizz } from "features";
+import dragDropQuizzData from "data/dragAndDrop.json";
 
 function App() {
   return (
     <>
       <main className="">
-        <div className="w-[50%] mx-auto bg-slate-200 h-screen">
-          <div className="answers ">
-            {answers.map((answer) => (
-              <DraggableAnswer key={answer.id} answer={answer} />
-            ))}
-          </div>
-          <div> 
-            <DroppableArea />
-          </div>
+        <div className="lg:w-[50%] mx-auto h-screen p-4 lg:p-8">
+          <h1 className="text-2xl mb-3 text-center">Quizz App</h1>
+          <DragAndDropQuizz
+            answers={dragDropQuizzData.answers}
+            questions={dragDropQuizzData.questions}
+          />
         </div>
       </main>
     </>

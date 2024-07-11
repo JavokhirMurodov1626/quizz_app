@@ -1,3 +1,69 @@
+
 {
-    
+    "questions":[
+        {
+            "id":1,
+            "text":"Normally in the ___, the element cabon moves in the form of carbon dioxide from a ___, such as forest fires, respiration, or decomposition.",
+            "answers":[
+                {
+                    "place":1,
+                    "value":"carbon cycle"
+                },
+                {
+                    "place":2,
+                    "value":"carbon source"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "text":"When carbon is trapped in a ___, it decreases the amount of carbon dioxide in the atmosphere.",
+            "answers":[
+                {
+                    "place":1,
+                    "value":"carbon sink"
+                }
+            
+            ]
+        },
+        {
+            "id":3,
+            "text":"Over the last few hundred years, the ___ of carbon dioxide in the atmosphere has been increasing as is seen in the ___.",
+            "answers":[
+                {
+                    "place":1,
+                    "value":"concentration"
+                },
+                {
+                    "place":2,
+                    "value":"Keeling Curve"
+                }
+            
+            ]
+        }
+    ],
+    "answers":[
+        {
+            "id":5,
+            "value":"Keeling Curve"
+        },
+        {
+            "id":1,
+            "value":"carbon cycle"
+        },
+       
+        {
+            "id":3,
+            "value":"carbon sink"
+        },
+        {
+            "id":4,
+            "value":"concentration"
+        },
+        {
+            "id":2,
+            "value":"carbon source"
+        }
+       
+    ]
 }

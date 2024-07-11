@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .draggable {
+    @apply text-blue-600 border border-blue-600 border-dashed cursor-move px-2 py-1;
+  }
+}
