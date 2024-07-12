@@ -5,10 +5,9 @@ type Props = {
     id: number;
     value: string;
   };
-  isDroppableArea: boolean;
 };
 
-const DraggableAnswer: React.FC<Props> = ({ answer, isDroppableArea }) => {
+const DraggableAnswer: React.FC<Props> = ({ answer }) => {
   const ref = useRef<HTMLSpanElement>(null);
 
   const dragStartHandler = (e: DragEvent<HTMLSpanElement>) => {
@@ -22,12 +21,7 @@ const DraggableAnswer: React.FC<Props> = ({ answer, isDroppableArea }) => {
 
   const dragEndHandler = () => {
     if (ref.current) {
-      if (isDroppableArea) {
-        ref.current.style.display = "none";
-      } else {
-        ref.current.style.display = "inline-block";
-        ref.current.style.opacity = "1";
-      }
+      ref.current.style.opacity = "1";
     }
   };
 
