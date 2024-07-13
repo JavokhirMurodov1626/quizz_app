@@ -1,0 +1,46 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Yesterday when I ___ (to be) at some reading a book, I ___ (hear) loud noise.",
+      "answers": [
+        {
+          "place": 1,
+          "value": "was"
+        },
+        {
+          "place": 2,
+          "value": "heard"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "A: Oh you look so tired and you're out of breath. Ah, I ___ (run) for almost 2 hours, I need to be ready untill competition.",
+      "answers": [
+        {
+          "place": 1,
+          "value": "have been running"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Last year when I went to Paris, I ___ (can/stay) with one of my friends but I decided not to bother him. So I stayed in a hotel. I ___ (visit) the Eiffel Tower and the Louvre Museum. I ___ (take) a lot of photos.",
+      "answers": [
+        {
+          "place": 1,
+          "value": "could have stayed"
+        },
+        {
+          "place": 2,
+          "value": "visited"
+        },
+        {
+          "place": 3,
+          "value": "took"
+        }
+      ]
+    }
+  ]
+}

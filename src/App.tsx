@@ -3,6 +3,7 @@ import {
   DragAndDropQuizz,
   SingleChoiceQuizz,
   MultipleChoiceQuizz,
+  TextInputQuizz
 } from "features";
 import dragDropQuizzData from "data/dragAndDrop.json";
 
@@ -17,7 +18,8 @@ function App() {
             questions={dragDropQuizzData.questions}
           />
           <SingleChoiceQuizz /> */}
-          <MultipleChoiceQuizz />
+          {/* <MultipleChoiceQuizz /> */}
+          <TextInputQuizz />
         </div>
       </main>
     </>
