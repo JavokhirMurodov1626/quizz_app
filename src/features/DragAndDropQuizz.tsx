@@ -60,15 +60,17 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
   };
   return (
     <>
-      <h2 className="text-2xl font-bold mb-5">
+      <h2 className="question-type-header">
         2. Complete the sentences with words from the list by dragging and
         dropping the appropriate word into each blank
       </h2>
+
       <div className="answers flex gap-3 mb-4 flex-wrap">
         {answers.map((answer) => (
           <DraggableAnswer key={answer.id} answer={answer} />
         ))}
       </div>
+
       <ul>
         {questions.map((question, questionId) => {
           let placesCount = 0;
@@ -82,6 +84,7 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
                   return (
                     <>
                       <DroppableArea
+                        key={`${question.id}-${placesCount}`}
                         questionId={questionId + 1}
                         placeId={placesCount}
                         setUserAnswers={setUserAnswers}
@@ -98,6 +101,7 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
                     content = (
                       <>
                         <DroppableArea
+                          key={`${question.id}-${placesCount}`}
                           questionId={questionId + 1}
                           placeId={placesCount}
                           setUserAnswers={setUserAnswers}
@@ -113,6 +117,7 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
                       <>
                         {sliceStart}
                         <DroppableArea
+                          key={`${question.id}-${placesCount}`}
                           questionId={questionId + 1}
                           placeId={placesCount}
                           setUserAnswers={setUserAnswers}
@@ -130,6 +135,7 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
           );
         })}
       </ul>
+
       <div className="my-4">
         {isSubmitted && (
           <div>
@@ -139,10 +145,11 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
           </div>
         )}
       </div>
+
       <button
         onClick={checkAnswers}
-        disabled={userAnswers.length !== answers.length}
-        className="border rounded-lg px-4 py-2 bg-green-600 active:bg-green-700 text-white font-medium disabled:bg-green-300 disabled:text-gray-5 disabled:cursor-not-allowed"
+        disabled={userAnswers.length !== answers.length || isSubmitted}
+        className="submit-btn"
       >
         Check answers
       </button>

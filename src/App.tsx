@@ -1,5 +1,5 @@
 import "./App.css";
-import { DragAndDropQuizz } from "features";
+import { DragAndDropQuizz,SingleChoice } from "features";
 import dragDropQuizzData from "data/dragAndDrop.json";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
             answers={dragDropQuizzData.answers}
             questions={dragDropQuizzData.questions}
           />
+          <SingleChoice />
         </div>
       </main>
     </>

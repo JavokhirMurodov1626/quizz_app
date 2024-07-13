@@ -106,7 +106,7 @@ const DroppableArea: React.FC<Props> = ({
         "shake"
       );
     }
-    console.log("checking...");
+  
   }, [checkedAnswers, questionId, placeId]);
 
   return (

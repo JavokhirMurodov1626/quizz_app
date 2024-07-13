@@ -1,0 +1,108 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is the capital of France?",
+      "options": [
+        {
+          "id": 1,
+          "value": "London",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "value": "Paris",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "value": "Canberra",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "value": "Washington D.C.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "What is the capital of Germany?",
+      "options": [
+        {
+          "id": 1,
+          "value": "London",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "value": "Tashkent",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "value": "Berlin",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "value": "Washington D.C.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "What is the capital of Spain?",
+      "options": [
+        {
+          "id": 1,
+          "value": "Canberra",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "value": "Paris",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "value": "Berlin",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "value": "Madrid",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "What is the capital of Uzbekistan?",
+      "options": [
+        {
+          "id": 1,
+          "value": "London",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "value": "Tashkent",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "value": "Berlin",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "value": "Washington D.C.",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
