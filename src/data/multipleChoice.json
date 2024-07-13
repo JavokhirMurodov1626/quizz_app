@@ -1,0 +1,38 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What are valid ways to declare a variable in JavaScript?",
+      "options": [
+        { "id": 1, "value": "var x;" },
+        { "id": 2, "value": "let y;" },
+        { "id": 3, "value": "const z;" },
+        { "id": 4, "value": "variable w;" }
+      ],
+      "answers": [1, 2, 3]
+    },
+    {
+      "id": 2,
+      "text": "Which of the following are JavaScript data types?",
+      "options": [
+        { "id": 1, "value": "String" },
+        { "id": 2, "value": "Number" },
+        { "id": 3, "value": "Boolean" },
+        { "id": 4, "value": "Function" },
+        { "id": 5, "value": "List" }
+      ],
+      "answers": [1, 2, 3, 4]
+    },
+    {
+      "id": 3,
+      "text": "What does the === operator do in JavaScript?",
+      "options": [
+        { "id": 1, "value": "Checks for equality and type coercion." },
+        { "id": 2, "value": "Checks for equality without type coercion." },
+        { "id": 3, "value": "Assigns a value to a variable." },
+        { "id": 4, "value": "Checks if two values are strictly equal." }
+      ],
+      "answers": [2, 4]
+    }
+  ]
+}

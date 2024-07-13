@@ -1,5 +1,9 @@
 import "./App.css";
-import { DragAndDropQuizz,SingleChoice } from "features";
+import {
+  DragAndDropQuizz,
+  SingleChoiceQuizz,
+  MultipleChoiceQuizz,
+} from "features";
 import dragDropQuizzData from "data/dragAndDrop.json";
 
 function App() {
@@ -8,11 +12,12 @@ function App() {
       <main className="">
         <div className="lg:w-[50%] mx-auto h-screen p-4 lg:p-8">
           <h1 className="text-2xl mb-3 text-center">Quizz App</h1>
-          <DragAndDropQuizz
+          {/* <DragAndDropQuizz
             answers={dragDropQuizzData.answers}
             questions={dragDropQuizzData.questions}
           />
-          <SingleChoice />
+          <SingleChoiceQuizz /> */}
+          <MultipleChoiceQuizz />
         </div>
       </main>
     </>
