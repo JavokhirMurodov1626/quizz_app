@@ -117,7 +117,7 @@ const DroppableArea: React.FC<Props> = ({
     >
       <input
         id={`answer-${questionId}-${placeId}`}
-        className="question border outline-none w-[100px] text-black rounded-lg"
+        className="question border outline-none w-[100px] text-black rounded-lg px-2 py-1"
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         onDragEnter={handleDragEnter}

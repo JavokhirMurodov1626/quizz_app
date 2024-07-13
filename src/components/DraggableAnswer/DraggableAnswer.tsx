@@ -32,7 +32,7 @@ const DraggableAnswer: React.FC<Props> = ({ answer }) => {
       onDragStart={dragStartHandler}
       onDragEnd={dragEndHandler}
       draggable={true}
-      className="answer draggable inline-blocktransition duration-300 ease-in-out"
+      className="answer draggable inline-blocktransition duration-300 ease-in-out text-xl"
     >
       {answer.value}
     </span>

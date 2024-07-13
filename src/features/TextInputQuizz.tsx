@@ -76,7 +76,7 @@ const TextInputQuizz = () => {
           const questionSlices = question.text.split(" ");
 
           return (
-            <li className="" key={question.id}>
+            <li className="text-xl" key={question.id}>
               <span className="me-2 ">{index + 1}.</span>
               {questionSlices.map((slice, sliceIndex) => {
                 if (slice === "___") {

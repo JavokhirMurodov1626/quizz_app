@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "JavaScript is a statically typed language.",
+      "answer": false
+    },
+    {
+      "id": 2,
+      "text": "In JavaScript, null is considered an object.",
+      "answer": true
+    },
+    {
+      "id": 3,
+      "text": "Arrow functions in JavaScript do not have their own this context.",
+      "answer": true
+    },
+    {
+      "id": 4,
+      "text": "JavaScript supports both object-oriented and functional programming paradigms.",
+      "answer": true
+    },
+    {
+      "id": 5,
+      "text": "The `let` keyword allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used.",
+      "answer": true
+    }
+  ]
+}

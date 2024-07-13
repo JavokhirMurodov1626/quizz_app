@@ -76,7 +76,7 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
           let placesCount = 0;
           const questionSlices = question.text.split(" ");
           return (
-            <li className="mb-4" key={question.id}>
+            <li className="mb-4 text-xl" key={question.id}>
               <span className="me-2 ">{questionId + 1}.</span>
               {questionSlices.map((slice) => {
                 if (slice === "___") {
