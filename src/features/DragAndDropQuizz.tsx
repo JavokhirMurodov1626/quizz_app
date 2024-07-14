@@ -42,14 +42,18 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
             userAnswer.questionId === question.id &&
             userAnswer.placeId === answer.place
         );
-        setCheckedAnswers((prev) => [
-          ...prev,
-          {
-            ...userAnswer,
-            isCorrect: userAnswer?.value === answer.value,
-          },
-        ]);
-        return userAnswer?.value === answer.value;
+
+        if (userAnswer) {
+          setCheckedAnswers((prev) => [
+            ...prev,
+            {
+              ...userAnswer,
+              isCorrect: userAnswer.value === answer.value,
+            },
+          ]);
+        }
+
+        return userAnswer ? userAnswer.value === answer.value : false;
       });
       return correctAnswer.every((answer) => answer);
     });
