@@ -59,7 +59,7 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
     setIsSubmitted(true);
   };
   return (
-    <>
+    <section className="">
       <h2 className="question-type-header">
         2. Complete the sentences with words from the list by dragging and
         dropping the appropriate word into each blank
@@ -153,7 +153,7 @@ const DragAndDropQuizz: React.FC<Props> = ({ answers, questions }) => {
       >
         Check answers
       </button>
-    </>
+    </section>
   );
 };
 

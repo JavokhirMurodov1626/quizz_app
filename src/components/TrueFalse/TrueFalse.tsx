@@ -70,7 +70,7 @@ const TrueFalseSelect: React.FC<TrueFalseSelectProps> = ({
     <select
       disabled={isSubmitted}
       id={`select-${question.id}`}
-      className=" px-2 py-1 rounded-lg border font-medium"
+      className=" px-2 py-1 rounded-lg border font-medium text-xl"
       onChange={(e) => handleSelectChange(e.target.value, question.id)}
     >
       <option value="">Select</option>
